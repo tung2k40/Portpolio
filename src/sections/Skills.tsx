@@ -19,7 +19,7 @@ const Skills = () => {
       opacity: 1,
       scale: 1,
       y: 0,
-      transition: { type: "spring", stiffness: 200, damping: 10 },
+      transition: { type: "spring" as const, stiffness: 200, damping: 10 },
     },
   };
 
@@ -36,7 +36,7 @@ const Skills = () => {
     visible: {
       opacity: 1,
       x: 0,
-      transition: { type: "spring", stiffness: 100 },
+      transition: { type: "spring" as const, stiffness: 100 },
     },
   };
 
